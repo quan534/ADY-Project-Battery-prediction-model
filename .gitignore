@@ -1,0 +1,4 @@
+﻿data/raw
+data/processed
+n*.parquet
+.venv
