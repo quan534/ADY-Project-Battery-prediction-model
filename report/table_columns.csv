@@ -1,0 +1,8 @@
+column,reason,decision
+cell,time/unit key,keep for feature building
+cycle,time/unit key,keep for feature building
+capacity,target,keep
+T_amb,correlation with target 0.43,keep
+idx,other,review
+eol,other,review
+rul,other,review
