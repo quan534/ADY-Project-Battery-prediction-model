@@ -12,7 +12,7 @@ SELECT cell, cycle, MAX(t) AS discharge_time, AVG(V) AS V_mean, MAX(T) AS T_max,
 FROM meas GROUP BY 1, 2;
 -- Q3: model table
 CREATE OR REPLACE TABLE feat AS
-SELECT c.cell, c.cycle, c.idx, c.T_amb, c.rul, u.*,
+SELECT c.cell, c.cycle, c.capacity, c.idx, c.T_amb, c.rul, u.*,
        LAG(u.discharge_time, 5) OVER (PARTITION BY c.cell ORDER BY c.cycle) AS dt_lag5
 FROM cyc c JOIN curve u USING (cell, cycle);
 SELECT cell, COUNT(*) AS n, MIN(rul), MAX(rul) FROM feat GROUP BY 1;
