@@ -1,0 +1,10 @@
+feature,group
+idx,exogenous/structural
+discharge_time,exogenous/structural
+V_mean,exogenous/structural
+T_max,lag/rolling
+V_min,exogenous/structural
+dV_mid_slope,exogenous/structural
+area_curve,exogenous/structural
+dt_lag5,lag/rolling
+T_amb,exogenous/structural

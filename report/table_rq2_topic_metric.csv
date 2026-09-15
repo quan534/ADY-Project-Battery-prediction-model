@@ -1,0 +1,6 @@
+,MAE_cycles
+Naive (baseline),21.3344
+Ridge,16.6027
+Random Forest,7.0048
+LightGBM,6.836
+XGBoost,6.4614
