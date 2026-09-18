@@ -1,0 +1,4 @@
+name,url,license,path,downloaded,rows,cols,start,end,note
+NASA Ames Prognostics Center of Excellence (PCoE) Battery Dataset,https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/,NASA Open Data / Public Domain,data/raw/B00*.mat,2026-09-18,,,,,
+NASA Ames Prognostics Center of Excellence (PCoE) Battery Dataset,https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/,NASA Open Data / Public Domain,data/raw/B000*.mat,2026-09-18,770070,6,cycle_0,cycle_613,"Parsed 34 cells into meas (770070, 6) and cycles (2794, 4)"
+NASA Ames Prognostics Center of Excellence (PCoE) Battery Dataset,https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/,NASA Open Data / Public Domain,data/raw/B000*.mat,2026-09-18,770070,6,cycle_0,cycle_613,"Parsed 34 cells into meas (770070, 6) and cycles (2794, 4)"
