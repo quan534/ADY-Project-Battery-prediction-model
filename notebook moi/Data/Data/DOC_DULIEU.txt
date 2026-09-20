@@ -1,0 +1,85 @@
+Nhom 2, ADY201m, Fall 2026
+
+Kich thuoc : 31.253 dong x 174 cot
+             167 dac trung + 7 cot phu
+Nguon      : Deng Z. va cong su, Applied Energy 339:120954 (2023)
+             github.com/BatICM/battery-charging-data-of-on-road-electric-vehicles
+Sinh ra tu : 16.100.728 ban ghi BMS cua 20 xe dien, 07/2019 den 11/2021
+Moi dong   : mot phien sac, toi thieu 30 ban ghi va 20 diem SOC
+
+CACH DOC
+
+  import pandas as pd
+  d = pd.read_csv('sessions.csv.gz')        # can 24 MB, khong can cai them gi
+  d = pd.read_parquet('sessions.parquet')   # nhanh hon, can pyarrow
+
+Neu Notebook B doi file sessions.csv thi bung nen truoc:
+  gunzip -k sessions.csv.gz                 # Linux, macOS
+  Expand-Archive hoac 7-Zip                 # Windows
+Ma bam sha256 16 ky tu dau: 5243cd6c9566ae12, khop voi manifest.json.
+
+BAY CO COT PHU
+
+  vehicle      so hieu xe, tu 1 den 20
+  session      so hieu phien trong xe do
+  t_start      thoi diem bat dau phien
+  n_rows       so ban ghi thô cua phien, CAM dung lam dac trung
+  ah           ampe gio da nap, CAM dung lam dac trung
+  capacity     NHAN can du bao, dung luong pack tinh bang Ah
+  bms_cap      uoc luong cua chinh BMS tren xe, chi dung lam moc so sanh
+
+Ba cot n_rows, ah, bms_cap deu bi cam dua vao mo hinh. Hai cot dau mang
+thong tin thoi luong, ma dien tich = dong nhan thoi gian, nen se lam lo nhan.
+Cot thu ba chinh la cau tra loi ma BMS da tinh san.
+
+167 DAC TRUNG, THEO TIEN TO
+
+  vcell     28  Duong cong dien ap cell trung binh, 21 diem va cac mo men
+  dv        19  Do doc dV tren moi diem SOC
+  spread    17  Lech cell, chenh cao nhat tru thap nhat
+  i         17  Dong sac, phan vi va do thuon
+  vmax      12  Dien ap cell cao nhat tai cac diem neo
+  vmin      12  Dien ap cell thap nhat tai cac diem neo
+  tmax      11  Nhiet do dau do cao nhat
+  tmin      11  Nhiet do dau do thap nhat
+  ic        10  Duong cong dung luong vi phan, SOC tang tren moi vol
+  soc        6  Cua so sac, vi tri phien trong dai SOC
+  v          5  Dien ap pack tuyet doi
+  tgrad      4  Chenh lech giua hai dau do nhiet
+  d2v        4  Do cong, dao ham bac hai cua duong cong
+  iamp       4  Mo men cua dong sac
+  vpack      4  Mo men cua dien ap pack
+  r          2  Noi tro uoc luong, vol lech tren moi ampe
+  c          1  Toc do C
+
+HAI BO DAC TRUNG
+
+  feature_names.csv        167 dac trung, dung cho bai cua sinh vien
+  feature_names_paper.csv   43 dac trung, dung de tai hien bang cua bai bao
+
+Bo 43 la tap con dung nguyen xi cua bo 167: cung ten, cung cong thuc,
+cung gia tri toi tung chu so.
+
+BO DAC TRUNG RUT GON, KEM THEO CHO TIEN
+
+  dac_trung_chon.csv        60 dac trung, ket qua cua Notebook C
+
+File nay KHONG phai san pham ban giao cua Notebook A. No do Notebook C sinh ra
+va duoc gui kem chi de ai muon chay thang Notebook D ma chua chay Notebook C.
+Notebook D doc no tu duong dan results/dac_trung_chon.csv, nen hay chep vao thu
+muc results/ chu khong phai vao thu muc du lieu. Neu khong co file, Notebook D
+van chay duoc voi ca 167 cot, chi cham hon va co canh bao.
+
+DE FILE O DAU
+
+  ev_data/data/   sessions.csv, feature_names.csv, feature_names_paper.csv,
+                  manifest.json
+  results/        dac_trung_chon.csv
+
+Notebook A va C doc tu ev_data/data. Notebook B va D doc tu ca hai cho.
+
+DUNG LAI TU DAU
+
+Neu muon tu dung lai bang nay thay vi dung file co san, chay Notebook_A_DuLieu.ipynb.
+Mat khoang 13 phut tren 2 loi CPU, ke ca thoi gian tai va giai nen du lieu tho.
+Chay lai Notebook C se sinh lai dac_trung_chon.csv, mat khoang 20 phut.
