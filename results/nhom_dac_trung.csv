@@ -1,0 +1,10 @@
+Nhóm,Số cột,Trong bộ 43,Đo cái gì
+Điện áp,37,14,"đường cong điện áp cell trung bình theo SOC, 21 mốc cộng các mô men"
+Nhiệt độ,26,6,"nhiệt cao nhất, thấp nhất, chênh lệch và mức tăng trong phiên"
+Cực trị cell,24,6,riêng cell cao nhất và cell thấp nhất tại từng mốc
+Độ dốc,23,5,độ dốc theo mười thập phân vị và độ cong theo bốn phần tư
+Dòng sạc,22,4,"dòng sạc là một tốc độ nên được phép dùng, gồm phân vị và độ thuôn"
+Chênh lệch cell,17,5,"cell cao nhất trừ cell thấp nhất, tín hiệu mất cân bằng pack"
+Đường cong IC,10,0,"SOC tăng được bao nhiêu trên mỗi vôn, mười khoảng điện áp"
+SOC,6,3,phiên sạc bắt đầu và kết thúc ở đâu trên thang SOC
+Điện trở,2,0,"vôn chênh lệch trên mỗi ampe, ước lượng thô của điện trở trong"
