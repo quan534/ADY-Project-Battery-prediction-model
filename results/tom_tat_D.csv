@@ -1,0 +1,7 @@
+Hướng,Thay đổi gì,Bao phủ trung bình,Xe tệ nhất,"Độ rộng, Ah"
+"Mốc, Notebook B","chỉ hiệu chuẩn nguồn, không nhãn đích",0.8923643850909851,0.7599754450583179,5.765955252808136
+R1 Mondrian,phân vị riêng cho 4 nhóm phiên sạc,0.8933789888049761,0.7526089625537139,5.355424665705544
+R2 ngân sách thích nghi,"K = 1000 nhãn, dồn vào xe hụt nhiều nhất",0.9359728175573712,0.85085182444893,8.040814170517525
+"R2 chia đều, để so","K = 1000 nhãn, chia đều cho 20 xe",0.9191687694299927,0.8373669283635673,7.054024235525965
+R3 huấn luyện lại,100 nhãn đích đưa vào tập huấn luyện,0.8924779875956487,0.7795945062132112,5.6602622233282744
+R3 hiệu chuẩn lại,100 nhãn đích dùng làm tập hiệu chuẩn,0.9249348457122005,0.8402406417112299,7.624648068373105
