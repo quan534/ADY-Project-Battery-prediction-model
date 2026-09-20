@@ -1,0 +1,44 @@
+LINK TAI DU LIEU - Nhom 2, ADY201m, Fall 2026
+Bo du lieu 20 xe dien chay that ngoai duong, 16.100.728 ban ghi BMS
+Nguon: Deng Z. va cong su, Applied Energy 339:120954 (2023)
+
+Trang kho, de tai tay tren trinh duyet:
+  https://github.com/BatICM/battery-charging-data-of-on-road-electric-vehicles
+
+Clone ca kho, nhanh nhat neu may co git:
+  git clone --depth 1 https://github.com/BatICM/battery-charging-data-of-on-road-electric-vehicles.git
+
+Tai thang tung file, 20 dia chi day du.
+LUU Y: ky tu # trong ten file phai viet la %23 tren dia chi web.
+Moi file khoang 11 den 13 MB. File chi vai KB la da tai hong.
+
+  #1.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%231.rar
+  #2.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%232.rar
+  #3.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%233.rar
+  #4.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%234.rar
+  #5.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%235.rar
+  #6.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%236.rar
+  #7.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%237.rar
+  #8.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%238.rar
+  #9.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%239.rar
+  #10.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%2310.rar
+  #11.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%2311.rar
+  #12.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%2312.rar
+  #13.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%2313.rar
+  #14.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%2314.rar
+  #15.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%2315.rar
+  #16.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%2316.rar
+  #17.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%2317.rar
+  #18.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%2318.rar
+  #19.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%2319.rar
+  #20.rar   https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%2320.rar
+
+Tai het bang mot lenh, tren Linux hoac macOS:
+  for n in $(seq 1 20); do curl -L -o "#$n.rar" "https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%23$n.rar"; done
+
+Tai het bang mot lenh, tren Windows PowerShell:
+  1..20 | ForEach-Object { Invoke-WebRequest "https://raw.githubusercontent.com/BatICM/battery-charging-data-of-on-road-electric-vehicles/main/%23$_.rar" -OutFile "#$_.rar" }
+
+Sau khi tai xong, 20 file #1.rar den #20.rar phai nam trong thu muc ev_data/raw,
+roi chay tiep o giai nen trong Notebook_A_DuLieu.ipynb.
+Can khoang 2 GB trong: 230 MB file nen, 1,2 GB file CSV sau khi giai nen.

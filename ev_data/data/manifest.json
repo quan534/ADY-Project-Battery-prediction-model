@@ -1,0 +1,32 @@
+{
+  "nguon": "Deng et al., Applied Energy 339:120954 (2023); github.com/BatICM/battery-charging-data-of-on-road-electric-vehicles",
+  "nguoi_lam": "Sinh vien A, Nhom 2",
+  "ngay": "2026-09-19 16:52",
+  "so_ban_ghi_tho": 16100728,
+  "so_phien": 31253,
+  "so_dac_trung": 167,
+  "so_dac_trung_bai_bao": 43,
+  "so_xe": 20,
+  "khoang_thoi_gian": [
+    "2019-07-23 08:51:50",
+    "2021-11-15 22:02:34"
+  ],
+  "nguong_loc": {
+    "min_rows": 30,
+    "min_soc_span": 20.0,
+    "capacity_range_Ah": [
+      60,
+      220
+    ],
+    "gap_giay": 10
+  },
+  "nhan": "tich phan ampe gio chia cho khoang SOC",
+  "cot_cam_dung_lam_dac_trung": [
+    "n_rows",
+    "ah",
+    "bms_cap",
+    "available_energy"
+  ],
+  "seed": 42,
+  "sha256_16": "47e35da9e2612444"
+}
