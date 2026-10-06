@@ -1,10 +1,10 @@
-Nhóm,Số cột,Trong bộ 43,Đo cái gì
-Điện áp,37,14,"đường cong điện áp cell trung bình theo SOC, 21 mốc cộng các mô men"
-Nhiệt độ,26,6,"nhiệt cao nhất, thấp nhất, chênh lệch và mức tăng trong phiên"
-Cực trị cell,24,6,riêng cell cao nhất và cell thấp nhất tại từng mốc
-Độ dốc,23,5,độ dốc theo mười thập phân vị và độ cong theo bốn phần tư
-Dòng sạc,22,4,"dòng sạc là một tốc độ nên được phép dùng, gồm phân vị và độ thuôn"
-Chênh lệch cell,17,5,"cell cao nhất trừ cell thấp nhất, tín hiệu mất cân bằng pack"
-Đường cong IC,10,0,"SOC tăng được bao nhiêu trên mỗi vôn, mười khoảng điện áp"
-SOC,6,3,phiên sạc bắt đầu và kết thúc ở đâu trên thang SOC
-Điện trở,2,0,"vôn chênh lệch trên mỗi ampe, ước lượng thô của điện trở trong"
+Group,Num columns,In paper set (43),What it measures
+Voltage,37,14,"mean cell voltage curve versus SOC, 21 checkpoints plus moments"
+Temperature,26,6,"highest, lowest, spread, and temperature rise during the session"
+Cell extrema,24,6,individual maximum and minimum cells at each checkpoint
+Voltage slope,23,5,slope across ten deciles and curvature across four quartiles
+Charging current,22,4,"charging current as a rate, including quantiles and tapering"
+Cell spread,17,5,"maximum minus minimum cell, pack imbalance signal"
+IC curve,10,0,"SOC increment per volt, ten voltage intervals"
+SOC,6,3,where charging sessions begin and end on the SOC scale
+Internal resistance,2,0,"voltage drop per ampere, rough estimate of internal resistance"
