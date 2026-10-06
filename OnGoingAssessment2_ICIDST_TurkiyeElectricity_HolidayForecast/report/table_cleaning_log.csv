@@ -1,0 +1,11 @@
+step,value
+raw rows,43824
+after removing repeated hours,43824
+steps that are not one hour,0
+missing values,0
+hours with consumption of zero or below,0
+"2021: mean and peak consumption (MWh), holiday hours","37305, 55575, 336"
+"2022: mean and peak consumption (MWh), holiday hours","36965, 51354, 336"
+"2023: mean and peak consumption (MWh), holiday hours","37023, 54045, 312"
+"2024: mean and peak consumption (MWh), holiday hours","39013, 57772, 336"
+"2025: mean and peak consumption (MWh), holiday hours","40241, 59504, 336"
