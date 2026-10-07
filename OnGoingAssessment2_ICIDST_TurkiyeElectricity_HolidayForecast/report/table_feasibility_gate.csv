@@ -1,0 +1,6 @@
+,0
+reference_MAE,2028.3911792237443
+best_model,Extra Trees
+best_MAE,823.6132696618915
+improvement_pct,59.39573795735572
+verdict,"GOOD: the model clearly beats the reference, keep RQ2 as planned"
