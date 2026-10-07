@@ -1,0 +1,17 @@
+column_name,column_type,min,max,approx_unique,null_percentage
+time,TIMESTAMP_NS,2021-01-01 00:00:00,2025-12-31 23:00:00,39445,0.0
+consumption,DOUBLE,19209.2,59503.67,50406,0.0
+generation,DOUBLE,11175.31,56219.06,41331,0.0
+price_tl,DOUBLE,0.74,4905.5,36729,0.0
+temperature,DOUBLE,-5.68,38.42,2792,0.0
+feels_like,DOUBLE,-9.73,39.2,3060,0.0
+humidity,DOUBLE,14.99,97.09,5303,0.0
+cloud,DOUBLE,0.0,100.0,7761,0.0
+wind,DOUBLE,1.36,37.44,2101,0.0
+rain,DOUBLE,0.0,7.87,342,0.0
+holiday,BIGINT,0,1,2,0.0
+year,INTEGER,2021,2025,5,0.0
+month,INTEGER,1,12,13,0.0
+hour,INTEGER,0,23,24,0.0
+dow,INTEGER,0,6,7,0.0
+weekend,BIGINT,0,1,2,0.0

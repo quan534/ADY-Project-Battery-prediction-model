@@ -1,0 +1,7 @@
+{
+  "file": "data/processed/electricity.parquet",
+  "rows": 43824,
+  "columns": 16,
+  "feat_rows": 43656,
+  "md5": "4b34cb7b48fd8fc3151824a94084db61"
+}
