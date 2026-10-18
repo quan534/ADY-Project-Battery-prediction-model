@@ -19,3 +19,7 @@ mean_7d,DOUBLE,0.0,46016
 temp_mean_24h,DOUBLE,0.0,37309
 target_year,BIGINT,0.0,5
 hour,BIGINT,0.0,24
+dow,BIGINT,0.0,7
+weekend,INTEGER,0.0,2
+season_sin,DOUBLE,0.0,380
+season_cos,DOUBLE,0.0,364
